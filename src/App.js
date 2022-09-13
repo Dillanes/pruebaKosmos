@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Form from "./Components/Form";
+import Select from "./Components/Select";
+import Data from '../src/helpers/Data.json'
+import React,{useState} from "react";
 function App() {
+  console.log(Data)
+  const [SelectInput, setSelectInput] = useState([]);
+  console.log(SelectInput)
+  const FuncionSelect = (dato)=>{
+    setSelectInput([...SelectInput,dato])
+  }
+
+  const delectInput = (dato)=>{
+    setSelectInput([...SelectInput.filter(registro=>registro !== dato)])
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="ContenedorGlobal">
+      <div className="ContainerFormSelect">
+        <div className="HeaderContainer">FORMULARIO PRUEBA KOSMOS</div>
+        <Form SelectInput={SelectInput} delectInput={delectInput}/>
+        <Select FuncionSelect={FuncionSelect}/>
+      </div>
+      
     </div>
   );
 }

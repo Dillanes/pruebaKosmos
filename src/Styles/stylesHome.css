@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    background-image: url('C:\Users\Soporte\Documents\PruebaE\prueba-kosmos\src\assets\fondo2.jpg');
+    background-position: center;
+}
+
+.ContenedorGlobal{
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+.ContainerFormSelect{
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    height: 700px;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 70%;
+    position: relative;
+    border-radius: 10px;
+    flex-direction: row;
+    box-shadow: 5px 5px 10px 1px #000;
+}
+
+.HeaderContainer{
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    background-color: #000;
+    border-radius: 10px 10px 0px 0px;
+    line-height: 60px;
+    padding: 10px;
+    color: #fff;
+    text-shadow: #bbb;
+    font-size: 25px;
+    font-weight: 600;
+    font-family:Arial, Helvetica, sans-serif
+    
+}
+
+
+.ContainerSelect{
+    margin-top: 70px;
+    background-image:url('C:\Users\Soporte\Documents\PruebaE\prueba-kosmos\src\assets\fondoS.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    row-gap: 20px;
+
+}
+
+.btnContainer{
+
+    display: flex;
+}
+
+.titleSelect{
+    background-image: url('C:\Users\Soporte\Documents\PruebaE\prueba-kosmos\src\assets\imgPng.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(255, 255, 255);
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.parrafoSelect{
+    font-size: 25px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: #000;
+    margin-top: 20px;
+}
+
+.buttonSelect{
+    margin: auto;
+    width: 200px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.buttonSelect:hover{
+    background-color:#555;
+    color: #fff;
+}
+
+
+
+/* FORMULARIO */
+.Form{
+    margin-top: 70px;
+    position: relative;
+
+
+}
+
+.bodyForm{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: auto;
+    margin-top: 20px;
+    width: 80%;
+
+
+}
+
+.ItemInput{
+ display: grid;
+ margin-bottom: 20px;
+}
+
+.labelForm{
+    color: #fff;
+    font-size: 20px;
+}
+
+.inputForm{
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+}
+.footerForm{
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+}
+
+.brnEnviar{
+    width: 150px;
+    height: 30px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 10px;
+    background-color: rgb(133, 231, 103);
+    transition: all 1s;
+}
+.brnEnviar:hover{
+    background-color: rgb(46, 139, 17);
+}
+
+
+
+
+.btnReset{
+    width: 150px;
+    height: 30px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 10px;
+    transition: all 1s;
+    background-color: rgb(139, 46, 43);
+}
+.btnReset:hover{
+    background-color: rgb(110, 17, 14);
+}
+
+
+
+
+
+
+
+
+/* RESPONSIVE */
+@media screen and (max-width:700px) {
+
+    .ContainerFormSelect{
+        grid-template-columns:100%;
+    }
+
+    .ContainerFormSelect{
+        height: 800px;
+        width: 90%;
+    }
+
+    .HeaderContainer{
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+}
