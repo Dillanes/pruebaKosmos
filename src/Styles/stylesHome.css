@@ -48,7 +48,6 @@ body{
 
 
 .ContainerSelect{
-    margin-top: 70px;
     background-image:url('C:\Users\Soporte\Documents\PruebaE\prueba-kosmos\src\assets\fondoS.jpg');
     background-position: center center;
     background-repeat: no-repeat;
@@ -63,7 +62,7 @@ body{
 }
 
 .btnContainer{
-
+    cursor: pointer;
     display: flex;
 }
 
@@ -202,5 +201,40 @@ body{
         font-size: 20px;
         font-weight: 500;
     }
+
+    .footerForm{
+        position: absolute;
+        bottom: 0px;
+        right: 20px;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+    }
+
+    .brnEnviar{
+        width: 100px;
+        margin: center;
+    }
+
+    .btnReset{
+        width: 100px;
+        margin: center;
+    }
+
+    .bodyForm{
+        max-height: 320px;
+        overflow-y: scroll;
+        -ms-overflow-style: none; /* IE 11 */
+        scrollbar-width: none; /* Firefox 64 */
+    }
+
+    .bodyForm::-webkit-scrollbar{
+        width: 2px;
+        display: none;
+    }
+
+    .btnContainer{
+        z-index: 1;
+    }
+
 
 }

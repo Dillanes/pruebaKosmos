@@ -24,11 +24,11 @@ function Form({SelectInput,delectInput,funcRegistrar,Guaradar}) {
                 </div> 
             </div>:null}
             
-            {SelectInput.includes('Direccion')?<div className='ItemInput'><div onClick={()=>delectInput('Direccion')} style={{fontSize:'10px',color:'red'}}>X</div>
+            {SelectInput.includes('Direccion')?<div className='ItemInput'><div onClick={()=>delectInput('Direccion')} style={{fontSize:'10px',color:'red',cursor:'pointer'}}>X</div>
                 <label className='labelForm'>Dirección:</label>
                 <input  type='text' className='inputForm' onChange={(e)=>funcRegistrar('Direccion',e.target.value)} placeholder='Direccion..'></input>
             </div>:null}
-            {SelectInput.includes('Estado')?<div className='ItemInput'><div onClick={()=>delectInput('Estado')} style={{fontSize:'10px',color:'red'}}>X</div>
+            {SelectInput.includes('Estado')?<div className='ItemInput'><div onClick={()=>delectInput('Estado')} style={{fontSize:'10px',color:'red',cursor:'pointer'}}>X</div>
                 <label className='labelForm'>Estado:</label>
                 <select className='inputForm' onChange={(e)=>funcRegistrar('Estado',e.target.value)}>
                     <option value='Jalisco'>Jalisco</option>
@@ -38,7 +38,7 @@ function Form({SelectInput,delectInput,funcRegistrar,Guaradar}) {
                     <option value='Mexico'>Mexico</option>
                 </select>
             </div>:null}
-            {SelectInput.includes('Descripcion')?<div className='ItemInput'><div onClick={()=>delectInput('Descripcion')} style={{fontSize:'10px',color:'red'}}>X</div>
+            {SelectInput.includes('Descripcion')?<div className='ItemInput'><div onClick={()=>delectInput('Descripcion')} style={{fontSize:'10px',color:'red',cursor:'pointer'}}>X</div>
                 <label className='labelForm'>Descripción:</label>
                 <input  onChange={(e)=>funcRegistrar('Descripcion',e.target.value)} type='text' className='inputForm' placeholder='Descripción..'></input>
             </div>:null}
